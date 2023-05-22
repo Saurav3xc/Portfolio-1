@@ -1,0 +1,511 @@
+@media only screen and (max-width:400px){
+*{margin:0px;
+  padding:0px;
+font-family: 'Poppins', sans-serif;
+  box-sizing:border-box;
+}
+body{
+  background: rgba(30, 33, 65, 0.8);
+  overflow-x: hidden;
+ 
+}
+.container{
+  width:100%;
+  height:80px;
+  background:#26273B;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;outline:0px;
+ 
+ 
+}
+ .logo h2{
+   padding-left:30px;
+   padding-top: 20px;
+   color:white;
+   font-size: 20px;
+   position: relative;
+ }.logo h2:after{
+  content: "";
+  width: 27%;
+  height: 4px;
+  background: royalblue;
+  position: absolute;
+  top:52px;
+  left: 45%;transition: width 0.3s ease
+  }
+.nav-links a:hover:after{
+  content: "";
+  width: 70%;
+  height: 4px;}
+.nav-links{
+  margin-right:10px;
+
+}
+.nav-links ul{
+  position:absolute;
+  top: 0px;
+  right: -250px;
+  background: black;
+  width: 40%;
+  height:100vh;
+  transition: all 0.3s ease;
+}
+.nav-links li{
+  display:block;
+  padding:40px  20px 10px 20px;
+ 
+ 
+}
+.nav-links .closed{
+  color:white;
+  display:block;
+  position: absolute;
+  top:25px;
+  right: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}.nav-links .bars{
+  color: white;
+  display:block;
+  margin-right: 15px;
+}
+
+.nav-links a:after{
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: royalblue;
+  position: absolute;
+  top:70px;
+  left: 23px;transition: width 0.3s ease
+  }
+.nav-links a:hover:after{
+  content: "";
+  width: 50%;
+  height: 4px;}
+.nav-links a{
+  color:white;
+  font-size :20px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+/*-----Main section------*/
+.main{
+  width:100%;
+  height:90vh;
+  margin-top: -4px;
+  background:#26273B;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-bottom: 2px solid indianred
+}
+.main-left{
+  width:100%;
+  height:50%;
+  margin-top:100px;
+  margin:auto;
+  
+}
+.main-left h1 {
+  color:white;
+  padding:50px 10px 15px 30px;
+  font-size: 25px;
+margin-top:250px;
+}
+.main-left h1 span {
+  
+  color:royalblue;
+}
+.main-left h2 {
+  color:white;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.main-left a{
+  color:white;
+  margin-left: 80px;
+  background: royalblue;
+  padding:10px 20px;
+  position: relative;
+  top:30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.main-right{
+  width:100%;
+  height:50%;
+  margin-top:-100px;
+}
+.main-right img{
+  width:100%;
+  height:100%;
+  padding-left:0px;margin-top:-380px;
+}
+
+.details{
+  width:100%;
+  height:auto;
+  background:#26273B;
+  margin-top:100px;
+  border-bottom:0px solid coral;
+}
+.details1 h1{
+  color:white;
+  text-align:center;
+  padding-top:50px;
+  font-size: 25px;
+}
+.details h1 span {
+  color: royalblue;
+  font-size:30px;
+}
+.details2 {
+  width:100%;
+  height:auto;
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-direction: column;
+}
+
+.teachers{
+  width:70%;
+  height:40vh;
+  background:white;
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 30px;
+  
+}
+.teachers img{
+  width:100%;
+  height:75%;
+  overflow:hidden;
+}
+@keyframes saurav{
+  to{
+    transform:rotateX(30deg);
+  }
+  from{
+    transform: rotateX(360deg);
+  }
+}
+.name {
+  width:100%;
+  height:26%;
+  background:royalblue;
+  overflow:hidden;
+ 
+}
+.teachers:hover{
+  background:red;
+  transform:scale(1.04);
+  transition:all 0.3s ease;
+  
+}
+.name h3 { 
+  color:white;
+text-align:center;
+padding-top:10px;
+  font-size:14px;
+}
+.name a{
+  color: black;
+  background:white;
+  padding:4px 15px;
+  position:relative;
+  left:68px;
+  top:5px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:450;
+  font-size: 14px;
+}
+/*----Courses details----------*/
+.courses{
+  width:100%;
+  height:auto;
+  background:#26273B;
+  margin-top: 100px;
+}
+.courses h1 {
+  color:royalblue;
+  text-align:center;
+  font-size:40px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.courses h1 span{
+  color: white;
+}
+.head-batches{
+  width:100%;
+  height:auto;
+  background:#26273B;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 0px solid black;
+}
+.batches{
+  width:90%;
+  height:25vh;
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(11,11,11,0.8621794871794872) 100%);
+margin-bottom: 30px;
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+ 
+}
+
+.batches a{
+  color:white;
+  margin-top: 40px;
+  font-size: 25px;
+ margin-left:40px;
+ text-decoration: none;
+ font-weight: 550;
+}
+ 
+.images  img{
+   width:200px;
+   height:90%;
+  
+   position: relative;
+   left: 0px;
+ }
+ /*-------Note-part--------*/
+ 
+ .note-title{
+   background:#26273B;
+   border-bottom: 0px solid coral;
+  ;
+  margin-top: 100px;
+   }
+   
+   .note-title h1{
+     color:royalblue;
+     padding-top:40px;
+     text-align:center;
+     font-size:40px;
+   }
+   .note-title h1 span{
+     color:white;
+   }
+ .note{
+   width:96%;
+   height: auto;
+   background:#26273B;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   margin-top:60px;
+  overflow-x:scroll; 
+  margin:auto;
+  margin-top:30px;
+  
+ }
+ .note-part{
+   width:25%;
+   height:150px;
+   background:white;
+   margin:auto;
+   margin-left:30px;
+   flex-shrink: 0;
+   border-radius:10px;
+   margin-bottom:50px;
+ }
+ .note-part:hover{
+   transform:scale(1.04);
+  transition:all 0.3s ease;
+  
+  }
+ .note-part a{
+   text-decoration: none;
+   font-weight:500;
+   
+ }
+ .note-part  p{
+   color:black;
+   font-size:10px;
+   padding-left:10px;
+   
+ }
+ .note-part img{
+   width:80%;
+   height:60%;
+   margin-left:10px;
+ }
+ /*----------Lecture part------*/
+ 
+ .lecture-title{
+   
+   background:#26273B;
+   border-bottom:0px solid coral;
+   margin-top: 100px;
+ }
+ 
+ .lecture-title h1 {
+   color:royalblue;
+   padding-top:30px;
+   font-size:40px;
+   text-align: center;
+ }
+ 
+ .lecture-title h1 span{
+   color:white;
+ }
+ 
+ .lecture{
+   width:98%;
+   height:auto;
+   background:#26273B;
+   display:flex;
+   align-items: center;
+   justify-content:space-between;
+   overflow-x: scroll;
+ }
+ 
+ .lecture-video{
+   width:250px;
+   height:250px;
+   border-radius:10px;
+   background:white;
+   flex-shrink: 0;
+   
+   margin: 30px 20px;
+ }
+ .lecture img{
+   width:100%;
+   height:100%;
+   border-radius:10px;
+ }
+ 
+ .lecture-video:hover{
+   transform:scale(1.06);
+  transition:all 0.3s ease;
+  
+ }
+ 
+ /*-------Branch -section -----*/
+ 
+ .branch-title{
+   width: 100%;
+   height:auto;
+   background:#26273B;
+   border-bottom: 0px solid coral;
+   margin-top:100px}
+ 
+ .branch-title h1 {
+   color:royalblue;
+   padding-top:30px;
+   font-size:30px;
+   text-align: center;
+ }
+ 
+ .branch-title h1 span{
+   color:white;
+ }
+ 
+ .branch{
+   width:98%;
+   height:auto;
+   background:#26273B;
+   display:flex;
+   align-items: center;
+   justify-content:space-between;
+   overflow-x:scroll;
+  
+   margin-bottom: 0px;
+ }
+ 
+ .branch-details{
+   width:80%;
+   height:80%;
+margin-left:0px;
+flex-shrink: 0;
+margin: 20px 5px;
+ }
+ .branch-details img{
+   width:250px;
+   height:250px;
+   border-radius:10px;
+ }
+ .branch-details a{
+   color:white;
+   font-size:20px;
+   text-decoration: none;
+   
+ }
+ 
+/*--------Contact-section-------*/
+
+.contact{
+width: 100%;
+   height:auto;
+   background:#26273B;
+   border-bottom: 0px solid coral;
+   margin-top:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+   
+.contact h1{
+color:royalblue;
+   padding-top:30px;
+   font-size:40px;
+   text-align: center;
+ }
+ 
+ .contact h1 span{
+   color:white;
+ }
+ .contact-form{
+   
+   width: 80%;
+   height: auto;
+ }
+ .contact-form input {
+   width: 100%;
+   padding: 6px 40px;
+   border-radius: 10px;
+   margin-top: 20px;
+   font-size: 20px;
+ }
+ .contact-form input::placeholder{
+   font-size: 15px;
+ }
+ .contact-form input[type="submit"]{
+   background:royalblue;
+   border:0px;
+   outline:0px;
+   font-size: 15px;
+   color:white;
+   margin-bottom: 40px;
+   
+ }
+ .contact-form textarea{
+   width: 100%;
+   height: 100px;
+   margin-top: 20px;
+   border-radius: 10px;
+ }
+ .contact-form textarea::placeholder{
+   font-size: 15px;
+   padding: 20px 20px;
+ }
+}

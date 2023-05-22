@@ -1,0 +1,481 @@
+*{margin:0px;
+  padding:0px;
+font-family: 'Poppins', sans-serif;
+  box-sizing:border-box;
+}
+body{
+  background: rgba(30, 33, 65, 0.8);
+  overflow-x: hidden;
+}
+.container{
+  width:100%;
+  height:80px;
+  background:#26273B;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;outline:0px;
+}
+ .logo h2{
+   padding-left:80px;
+   padding-top: 20px;
+   color:white;
+   font-size: 30px;
+   position: relative;
+ }.logo h2:after{
+  content: "";
+  width: 27%;
+  height: 4px;
+  background: royalblue;
+  position: absolute;
+  top:70px;
+  left: 45%;transition: width 0.3s ease
+  }
+.nav-links a:hover:after{
+  content: "";
+  width: 70%;
+  height: 4px;}
+.nav-links{
+  margin-right:60px;
+}
+.nav-links li{
+  display:inline;
+  padding:40px  20px 10px 20px;
+  position: relative;
+}
+.nav-links .bars{
+  color: white;
+  display:none;
+}
+.nav-links .closed{
+  color:white;
+  display:none;}
+.nav-links a:after{
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: royalblue;
+  position: absolute;
+  top:70px;
+  left: 13px;transition: width 0.3s ease
+  }
+.nav-links a:hover:after{
+  content: "";
+  width: 70%;
+  height: 4px;}
+.nav-links a{
+  color:white;
+  font-size :20px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+/*-----Main section------*/
+.main{
+  width:100%;
+  height:60vh;
+  margin-top: -4px;
+  background:#26273B;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid indianred
+}
+.main-left{
+  width:60%;
+  height:50%;
+  margin-top:200px;
+  
+}
+.main-left h1 {
+  color:white;
+  padding:100px 10px 15px 70px;
+  font-size: 45px;
+}
+.main-left h1 span {
+  
+  color:royalblue;
+}
+.main-left h2 {
+  color:white;
+  padding-left: 80px;
+  font-size: 30px;
+}
+.main-left a{
+  color:white;
+  margin-left: 150px;
+  background: royalblue;
+  padding:10px 20px;
+  position: relative;
+  top:30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.main-right{
+  width:45%;
+  height:90%;
+  margin-top:100px;
+}
+.main-right img{
+  width:100%;
+  height:100%;
+  padding-left:100px;
+}
+
+.details{
+  width:100%;
+  height:auto;
+  background:#26273B;
+  margin-top:300px;
+  border-bottom:4px solid coral;
+}
+.details1 h1{
+  color:white;
+  text-align:center;
+  padding-top:50px;
+}
+.details h1 span {
+  color: royalblue;
+  font-size:50px;
+}
+.details2 {
+  width:100%;
+  height:30vh;
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.teachers{
+  width:27%;
+  height:23vh;
+  background:white;
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.teachers img{
+  width:100%;
+  height:75%;
+  overflow:hidden;
+}
+@keyframes saurav{
+  to{
+    transform:rotateX(30deg);
+  }
+  from{
+    transform: rotateX(360deg);
+  }
+}
+.name {
+  width:100%;
+  height:23%;
+  background:royalblue;
+  overflow:hidden;
+  border-radius:10px;
+}
+.teachers:hover{
+  background:red;
+  transform:scale(1.04);
+  transition:all 0.3s ease;
+  
+}
+.name h3 { 
+  color:white;
+text-align:center;
+padding-top:10px;
+  font-size:25px;
+}
+.name a{
+  color: black;
+  background:white;
+  padding:7px 15px;
+  position:relative;
+  left:68px;
+  top:10px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:450;
+}
+/*----Courses details----------*/
+.courses{
+  width:100%;
+  height:auto;
+  background:#26273B;
+  margin-top: 300px;
+}
+.courses h1 {
+  color:royalblue;
+  text-align:center;
+  font-size:60px;
+  padding-top:50px;
+}
+.courses h1 span{
+  color: white;
+}
+.head-batches{
+  width:100%;
+  height:25vh;
+  background:#26273B;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+border-bottom: 3px solid coral;
+}
+.batches{
+  width:45%;
+  height:20vh;
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(11,11,11,0.8621794871794872) 100%);
+  border-radius:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.batches a{
+  color:white;
+  margin-top: 40px;
+  font-size: 35px;
+ margin-left:40px;
+ text-decoration: none;
+ font-weight: 550;
+}
+ 
+.images  img{
+   width:270px;
+   height:20vh;
+  
+   position: relative;
+   left: 0px;
+ }
+ /*-------Note-part--------*/
+ 
+ .note-title{
+   background:#26273B;
+   border-bottom: 3px solid coral;
+  ;
+  margin-top: 300px;
+   }
+   
+   .note-title h1{
+     color:royalblue;
+     padding-top:40px;
+     text-align:center;
+     font-size:70px;
+   }
+   .note-title h1 span{
+     color:white;
+   }
+ .note{
+   width:96%;
+   background:#26273B;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   margin-top:60px;
+  overflow-x:scroll; 
+  margin:auto;
+  margin-top:30px;
+  
+ }
+ .note-part{
+   width:27%;
+   height:350px;
+   background:white;
+   margin:auto;
+   margin-left:30px;
+   flex-shrink: 0;
+   border-radius:10px;
+   margin-bottom:50px;
+ }
+ .note-part:hover{
+   transform:scale(1.04);
+  transition:all 0.3s ease;
+  
+  }
+ .note-part a{
+   text-decoration: none;
+   font-weight:500;
+ }
+ .note-part  p{
+   color:black;
+   font-size:20px;
+   padding-left:20px;
+   
+ }
+ .note-part img{
+   width:80%;
+   height:70%;
+   margin-left:30px;
+ }
+ /*----------Lecture part------*/
+ 
+ .lecture-title{
+   
+   background:#26273B;
+   border-bottom:3px solid coral;
+   margin-top: 300px;
+ }
+ 
+ .lecture-title h1 {
+   color:royalblue;
+   padding-top:70px;
+   font-size:70px;
+   text-align: center;
+ }
+ 
+ .lecture-title h1 span{
+   color:white;
+ }
+ 
+ .lecture{
+   width:98%;
+   height:500px;
+   background:#26273B;
+   display:flex;
+   align-items: center;
+   justify-content:space-between;
+   overflow-x: scroll;
+ }
+ 
+ .lecture-video{
+   width:400px;
+   height:350px;
+   border-radius:10px;
+   background:white;
+   flex-shrink: 0;
+   margin-left:40px;
+   margin-bottom: 30px;
+ }
+ .lecture img{
+   width:100%;
+   height:100%;
+   border-radius:10px;
+ }
+ 
+ .lecture-video:hover{
+   transform:scale(1.06);
+  transition:all 0.3s ease;
+  
+ }
+ 
+ /*-------Branch -section -----*/
+ 
+ .branch-title{
+   width: 100%;
+   height:auto;
+   background:#26273B;
+   border-bottom: 3px solid coral;
+   margin-top:300px}
+ 
+ .branch-title h1 {
+   color:royalblue;
+   padding-top:70px;
+   font-size:70px;
+   text-align: center;
+ }
+ 
+ .branch-title h1 span{
+   color:white;
+ }
+ 
+ .branch{
+   width:98%;
+   height:500px;
+   background:#26273B;
+   display:flex;
+   align-items: center;
+   justify-content:space-between;
+   overflow-x:scroll;
+  
+   margin-bottom: 100px;
+ }
+ 
+ .branch-details{
+   width:80%;
+   height:80%;
+margin-left:30px;
+flex-shrink: 0;
+margin-top: 150px;
+ }
+ .branch-details img{
+   width:100%;
+   height:90%;
+   border-radius:10px;
+ }
+ .branch-details a{
+   color:white;
+   font-size:50px;
+   text-decoration: none;
+   
+ }
+ 
+/*--------Contact-section-------*/
+
+.contact{
+width: 100%;
+   height:auto;
+   background:#26273B;
+   border-bottom: 3px solid coral;
+   margin-top:300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+   
+.contact h1{
+color:royalblue;
+   padding-top:70px;
+   font-size:70px;
+   text-align: center;
+ }
+ 
+ .contact h1 span{
+   color:white;
+ }
+ .contact-form{
+   
+   width: 50%;
+   height: 700px;
+ }
+ .contact-form input {
+   width: 100%;
+   padding: 17px 40px;
+   border-radius: 10px;
+   margin-top: 40px;
+   font-size: 20px;
+   transition: border 0.3s ease;
+ }
+ .contact-form input::placeholder{
+   font-size: 25px;
+ }
+ .contact-form input:focus{
+   border: 4px solid royalblue;
+   outline: 0px;
+ }
+ .contact-form input[type="submit"]{
+   background:royalblue;
+   border:0px;
+   outline:0px;
+   font-size: 25px;
+   color:white;
+   
+ }
+ .contact-form textarea{
+   width: 100%;
+   margin-top: 40px;
+   border-radius: 10px;
+ }
+ .contact-form textarea:focus{
+   border: 4px solid royalblue;
+   outline: 0px;
+ }
+ .contact-form textarea::placeholder{
+   font-size: 25px;
+   padding: 20px 20px;
+ }
